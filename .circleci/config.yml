@@ -38,4 +38,4 @@ jobs:
       - run:
           name: run mypy
           command: |
-            poetry run mypy ./
+            poetry run mypy ./ --ignore-missing
