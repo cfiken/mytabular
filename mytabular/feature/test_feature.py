@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import pytest
 
-from cfiken.atma4.feature.feature import (
+from mytabular.feature.feature import (
     create_user_label,
     create_shop_label,
     create_target_in_train,
@@ -61,12 +61,12 @@ save_cache = False
 is_ci = 'CI' in os.environ and os.environ['CI'] == 'true'
 do_not_test = is_ci or not test_all
 
-if not is_ci:
-    train = pd.read_csv('/home/td009/kaggle-toguro/data/train.csv')
-    test = pd.read_csv('/home/td009/kaggle-toguro/data/test.csv')
-    meta_base = pd.read_csv('/home/td009/kaggle-toguro/data/meta.csv')
-    log_base = pd.read_csv('/home/td009/kaggle-toguro/data/purchase_log.csv')
-    category_base = pd.read_csv('/home/td009/kaggle-toguro/data/category.csv')
+# if not is_ci:
+#     train = pd.read_csv('/home/td009/kaggle-toguro/data/train.csv')
+#     test = pd.read_csv('/home/td009/kaggle-toguro/data/test.csv')
+#     meta_base = pd.read_csv('/home/td009/kaggle-toguro/data/meta.csv')
+#     log_base = pd.read_csv('/home/td009/kaggle-toguro/data/purchase_log.csv')
+#     category_base = pd.read_csv('/home/td009/kaggle-toguro/data/category.csv')
 
 
 def get_base() -> Tuple:

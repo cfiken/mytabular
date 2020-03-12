@@ -8,7 +8,7 @@ from sklearn.preprocessing import LabelEncoder
 from sklearn.decomposition import PCA
 from sklearn.feature_extraction.text import TfidfTransformer
 
-from cfiken.atma4.util import change_column_name, feature_cache, SEED
+from mytabular.util import change_column_name, feature_cache, SEED
 
 '''
 再現性確保のため特徴作るメソッド切り出してる

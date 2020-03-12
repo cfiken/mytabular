@@ -17,7 +17,7 @@ class BaseRunner(metaclass=ABCMeta):
         self.name = name
         self.description = description
         self.feature_names = []
-        self.outputdir = Path('./cfiken/atma4/output') / self.name
+        self.outputdir = Path('./mytabular/output') / self.name
         if not self.outputdir.exists():
             self.outputdir.mkdir()
 

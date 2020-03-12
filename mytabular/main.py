@@ -1,8 +1,8 @@
 import argparse
-# from cfiken.atma4.runner.purchase_together_kfold import PurchaseTogetherRunner
-from cfiken.atma4.runner.adversarial_validation import AdversarialValidationRunner
-from cfiken.atma4.runner.purchase_pca_kfold import PurchasePCARunner
-from cfiken.atma4.runner.purchase_pca_groupkfold import PurchasePCAGroupKFoldRunner
+# from mytabular.runner.purchase_together_kfold import PurchaseTogetherRunner
+from mytabular.runner.adversarial_validation import AdversarialValidationRunner
+from mytabular.runner.purchase_pca_kfold import PurchasePCARunner
+from mytabular.runner.purchase_pca_groupkfold import PurchasePCAGroupKFoldRunner
 
 
 def get_args():

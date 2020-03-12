@@ -484,6 +484,14 @@ version = "0.14.1"
 
 [[package]]
 category = "main"
+description = "Pure-Python Japan Public Holiday Generate"
+name = "jpholiday"
+optional = false
+python-versions = "*"
+version = "0.1.1"
+
+[[package]]
+category = "main"
 description = "A Python implementation of the JSON5 data format."
 name = "json5"
 optional = false
@@ -1035,7 +1043,7 @@ six = ">=1.9"
 [[package]]
 category = "main"
 description = "Run a subprocess in a pseudo terminal"
-marker = "sys_platform != \"win32\" or os_name != \"nt\" or python_version >= \"3.3\" and sys_platform != \"win32\""
+marker = "python_version >= \"3.3\" and sys_platform != \"win32\" or sys_platform != \"win32\" or os_name != \"nt\" or python_version >= \"3.3\" and sys_platform != \"win32\" and (python_version >= \"3.3\" and sys_platform != \"win32\" or sys_platform != \"win32\")"
 name = "ptyprocess"
 optional = false
 python-versions = "*"
@@ -1574,7 +1582,7 @@ docs = ["sphinx", "jaraco.packaging (>=3.2)", "rst.linker (>=1.9)"]
 testing = ["jaraco.itertools", "func-timeout"]
 
 [metadata]
-content-hash = "0ebeede14a12d74267424a10b56ed0751c7052f3e80237accd333a1211e4cbb7"
+content-hash = "336bd25998b5a5cf1c7d54f120318065fbe7c04d28731762fd24fcb8cc1d21eb"
 python-versions = "^3.7"
 
 [metadata.files]
@@ -1731,6 +1739,10 @@ jinja2 = [
 joblib = [
     {file = "joblib-0.14.1-py2.py3-none-any.whl", hash = "sha256:bdb4fd9b72915ffb49fde2229ce482dd7ae79d842ed8c2b4c932441495af1403"},
     {file = "joblib-0.14.1.tar.gz", hash = "sha256:0630eea4f5664c463f23fbf5dcfc54a2bc6168902719fa8e19daf033022786c8"},
+]
+jpholiday = [
+    {file = "jpholiday-0.1.1-py3-none-any.whl", hash = "sha256:7a29095e82a71a356790e592852321bf73cc2b074c912f05c2b5af242c0849eb"},
+    {file = "jpholiday-0.1.1.tar.gz", hash = "sha256:328c7df81ee028f96523232effc3a240971aad8fc604c802c02035483f996aa8"},
 ]
 json5 = [
     {file = "json5-0.9.2-py2.py3-none-any.whl", hash = "sha256:86d927ba58cc623336fbecd7e31697e371b93c3a68539950a82846c3e5ef8cf9"},

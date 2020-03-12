@@ -5,9 +5,9 @@ from sklearn.model_selection import GroupKFold
 from sklearn.metrics import roc_auc_score
 import lightgbm
 
-from toguro.lib import report
-from cfiken.atma4.runner.base import BaseRunner, Result
-from cfiken.atma4.feature.feature import (
+import report
+from mytabular.runner.base import BaseRunner, Result
+from mytabular.feature.feature import (
     create_user_label,
     create_shop_label,
     create_purchase_together_cd1,
@@ -44,17 +44,17 @@ from cfiken.atma4.feature.feature import (
     create_4week_purchase_count,
     create_user_cd3_7days_mean
 )
-from cfiken.atma4.util import save_feature_importance, SEED
+from mytabular.util import save_feature_importance, SEED
 
-train = pd.read_csv('/home/td009/kaggle-toguro/data/train.csv')
-test = pd.read_csv('/home/td009/kaggle-toguro/data/test.csv')
-meta = pd.read_csv('/home/td009/kaggle-toguro/data/meta.csv')
-log = pd.read_csv('/home/td009/kaggle-toguro/data/purchase_log.csv')
-category = pd.read_csv('/home/td009/kaggle-toguro/data/category.csv')
-jan = pd.read_csv('/home/td009/kaggle-toguro/data/jan.csv')
-submission = pd.read_csv('/home/td009/kaggle-toguro/data/sample_submission.csv')
+# train = pd.read_csv('/home/td009/kaggle-toguro/data/train.csv')
+# test = pd.read_csv('/home/td009/kaggle-toguro/data/test.csv')
+# meta = pd.read_csv('/home/td009/kaggle-toguro/data/meta.csv')
+# log = pd.read_csv('/home/td009/kaggle-toguro/data/purchase_log.csv')
+# category = pd.read_csv('/home/td009/kaggle-toguro/data/category.csv')
+# jan = pd.read_csv('/home/td009/kaggle-toguro/data/jan.csv')
+# submission = pd.read_csv('/home/td009/kaggle-toguro/data/sample_submission.csv')
 
-idx_to_column = {k: v for k, v in enumerate(list(submission.columns))}
+# idx_to_column = {k: v for k, v in enumerate(list(submission.columns))}
 
 lgb_params = {
     'objective': 'binary',
