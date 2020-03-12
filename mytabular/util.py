@@ -128,7 +128,7 @@ def target_encoding(df_train: pd.DataFrame,
         df_valid = df_valid.map(target_mean)
     # trainデータのencoding
     tmp = np.repeat(np.nan, df_train.shape[0])
-    kf = KFold(n_splits=kfold, shuffle=True, random_state=seed)
+    kf = KFold(n_splits=kfold, shuffle=True, random_state=SEED)
     for idx_1, idx_2 in kf.split(df_train):
         target_mean = data_tmp.iloc[idx_1].groupby(columns)[
             'target'].mean()

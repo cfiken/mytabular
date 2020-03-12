@@ -16,7 +16,7 @@ class BaseRunner(metaclass=ABCMeta):
     def __init__(self, name: str, description: str = '') -> None:
         self.name = name
         self.description = description
-        self.feature_names = []
+        self.feature_names: List[str] = []
         self.outputdir = Path('./mytabular/output') / self.name
         if not self.outputdir.exists():
             self.outputdir.mkdir()

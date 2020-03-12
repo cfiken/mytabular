@@ -1,8 +1,8 @@
 import argparse
 # from mytabular.runner.purchase_together_kfold import PurchaseTogetherRunner
-from mytabular.runner.adversarial_validation import AdversarialValidationRunner
-from mytabular.runner.purchase_pca_kfold import PurchasePCARunner
-from mytabular.runner.purchase_pca_groupkfold import PurchasePCAGroupKFoldRunner
+# from mytabular.runner.adversarial_validation import AdversarialValidationRunner
+# from mytabular.runner.purchase_pca_kfold import PurchasePCARunner
+# from mytabular.runner.purchase_pca_groupkfold import PurchasePCAGroupKFoldRunner
 
 
 def get_args():
@@ -25,7 +25,7 @@ if __name__ == '__main__':
     args = get_args()
     name = str(args.name)
     desc = str(args.desc)
-    runner = PurchasePCAGroupKFoldRunner(name, desc)
+    # runner = PurchasePCAGroupKFoldRunner(name, desc)
     # runner = PurchasePCARunner(name, desc)
     # runner = AdversarialValidationRunner(name, desc)
-    runner.run()
+    # runner.run()
