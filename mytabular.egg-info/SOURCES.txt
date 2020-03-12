@@ -1,0 +1,8 @@
+README.rst
+setup.py
+mytabular/__init__.py
+mytabular.egg-info/PKG-INFO
+mytabular.egg-info/SOURCES.txt
+mytabular.egg-info/dependency_links.txt
+mytabular.egg-info/requires.txt
+mytabular.egg-info/top_level.txt
