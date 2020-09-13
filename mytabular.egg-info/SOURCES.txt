@@ -1,4 +1,4 @@
-README.rst
+README.md
 setup.py
 mytabular/__init__.py
 mytabular/main.py
