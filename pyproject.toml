@@ -21,6 +21,8 @@ fastprogress = "*"
 mlflow = "^1.6.0"
 feather-format = "^0.4.0"
 jpholiday = "^0.1.1"
+matplotlib_venn = "^0.11.5"
+pandas_profiling = "^2.8.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

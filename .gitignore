@@ -1,11 +1,14 @@
 # ignore my custom
-output
-data
+data/*
+log/*
+ckpt/*
+output/*
+mlruns
 input
-log
-ckpt
 
 report.py
+
+!.gitkeep
 
 # mac
 .DS_Store
